@@ -3,10 +3,124 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <header class="main-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a href="index.html">Главная</a></li>
+              <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+              <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+              <li class="site-list__item"><a href="htmlacademy.html">HTML academy</a></li>
+            </ul>
+        </div>
+        <button class="main-nav close-button" type="button">Закрыть</button>
+      </nav>
+
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="city of Sedona logo">
+      </a>
+
+     <figure>
+       <img class="header-image" src="http://placehold.it/768x389" width="768" height="389" alt="Welcome to the gorgeous Sedona" >
+       <img class="header-image" src="http://placehold.it/280x213" width="280" height="213" alt="Because the Grand Canyon Sucks!">
+     </figure>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Город Седона</h1>
+
+      <div class="page-main__description">
+        <h2 class="page-main__description__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="page-main__description__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h2 class="advantages__title">Настоящий городок</h2>
+          <p class="advantages__number">- №1 -</p>
+          <p class="advantages__desc">Седона не аттракцион для туристов, тамтечет своя жизнь</p>
+          <figure>
+            <img class="advantage-item advantage-image" src="http://placehold.it/520x260" width="520" height="260" alt="Городок">
+          </figure>
+        </li>
+        <li class="advantages__item">
+          <h2 class="advantages__title">Там есть мост Дьявола</h2>
+          <p class="advantages__number">- №2 -</p>
+          <p class="advantages__desc">Да, по нему можно пройтись! Если вы осмолитесь, конечно</p>
+          <figure>
+            <img class="advantage-item advantage-image" src="http://placehold.it/520x260" width="520" height="260" alt="Мост Дьявола">
+          </figure>
+        </li>
+        <li class="advantages__item">
+          <h2 class="advantages__title">Небольшая площадь</h2>
+          <p class="advantages__number">- №3 -</p>
+          <p class="advantages__desc">Все интересные места находятся очень близко</p>
+        </li>
+        <li class="advantages__item">
+          <h2 class="advantages__title">Красивая дорога</h2>
+          <p class="advantages__number">- №4 -</p>
+          <p class="advantages__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="advantages__item">
+          <h2>Мало туристов</h2>
+          <p class="advantages__number">- №5 -</p>
+          <p class="advantages__desc">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+
+          <ul class="advantages__list-extra">
+            <li class="advantages__item-extra advantages__item-extra--accomodation">
+              <h2 class="advantages__item-extra__title">Жилье</h2>
+              <p class="advantages__item-extra__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="advantages__item-extra advantages__item-extra--suvenirs">
+              <h2 class="advantages__item-extra__title">Сувениры</h2>
+              <p class="advantages__item-extra__desc">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="advantages__item-extra advantages__item-extra--food">
+              <h2 class="advantages__item-extra__title">Еда</h2>
+              <p class="advantages__item-extra__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+        </ul>
+
+      <section class="booking-main">
+        <h2 class="booking-main__title">Заинтересовались?</h2>
+        <p class="booking-main__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button booking-button">Найти гостиницу</button>
+      </section>
+
+      <div class="map-main">
+        <figure>
+          <img class="map-main map" src="http://placehold.it/320x350" width="320" height="350" alt="Карта">
+        </figure>
+      </div>
+
+    </section>
+    </main>
+
+  <footer class="page-footer">
+    <a class="page-footer__instagram" href="#">#visitsedona</a>
+
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="social__item"><a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="social__item"><a class="social__link social__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
+      </ul>
+    </div>
+
+    <p class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <img class="copyright__link" src="http://placehold.it/27x34" width="27" height="34" alt="HTML academy" href="htmlacademy.ru">
+    </p>
+  </footer>
 
   </body>
 </html>
