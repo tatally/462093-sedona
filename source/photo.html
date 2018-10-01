@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a href="index.html">Главная</a></li>
+              <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+              <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+              <li class="site-list__item"><a href="htmlacademy.html">HTML academy</a></li>
+          </ul>
+        </div>
+        <button class="main-nav close-button" type="button">Закрыть</button>
+        </nav>
+
+        <a class="header__logo" href="index.html">
+          <img class="header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="city of Sedona logo">
+        </a>
+
+        <div class="header__site-page-image site-page-image">
+          <img class="site-page-image__image" src="http://placehold.it/768x158" width="768" height="158" alt="Sedona_foto">
+          <img class="site-page-image__title" src="http://placehold.it/229x39" width="229" height="39" alt="Sedona">
+        </div>
+    </header>
+
+    <main class="page-photo">
+      <h1 class="visually-hidden">Фото и видео Седона</h1>
+
+      <div class="page-photo__description">
+        <h2 class="page-photo__title">Фото и видео</h2>
+        <p class="page-photo__desc">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+
+      <section class="fotos">
+        <h2 class="visually-hidden">Фотографии Седоны</h2>
+        <ul class="fotos__list">
+          <hr class="fotos__fotos-line">
+          <li class="fotos__item">
+            <figure class="fotos__item">
+              <img src="http://placehold.it/280x280" width="280" height="280" alt="Фото: Неродные просторы">
+              <figcaption>Неродные просторы</figcaption>
+            </figure>
+              <p class="fotos__author">Автор фото:</p>
+              <cite class="fotos__author-name">Борис</cite>
+              <img class="fotos__like">
+              <p class="fotos__like-total">1350</p>
+          </li>
+
+          <hr class="fotos__fotos-line">
+          <li class="fotos__item">
+            <figure class="fotos__item">
+              <img src="http://placehold.it/280x280" width="280" height="280" alt="Фото: Местная растительность">
+              <figcaption>Местная растительность</figcaption>
+            </figure>
+              <p class="fotos__author">Автор фото:</p>
+              <cite class="fotos__author-name">Сергей</cite>
+              <img class="fotos__like">
+              <p class="fotos__like-total">143</p>
+          </li>
+
+          <hr class="fotos__fotos-line">
+          <li class="fotos__item">
+            <figure class="fotos__item">
+              <img src="http://placehold.it/280x280" width="280" height="280" alt="Фото: Дорога на север">
+              <figcaption>Дорога на север</figcaption>
+            </figure>
+              <p class="fotos__author">Автор фото:</p>
+              <cite class="fotos__author-name">Петр</cite>
+              <img class="fotos__like">
+              <p class="fotos__like-total">96</p>
+          </li>
+
+          <hr class="fotos__fotos-line">
+          <li class="fotos__item">
+            <figure class="fotos__item">
+              <img src="http://placehold.it/280x280" width="280" height="280" alt="Фото: Мост дьявола">
+              <figcaption>Мост дьявола</figcaption>
+            </figure>
+              <p class="fotos__author">Автор фото:</p>
+              <cite class="fotos__author-name">Антон</cite>
+              <img class="fotos__like">
+              <p class="fotos__like-total">254</p>
+          </li>
+
+          <hr class="fotos__fotos-line">
+        </ul>
+      </section>
+
+        <section class="video">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="video__desc">Смотрите презентация и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <video scr="#" poster="http://placehold.it/320x200" controls width="320" height="200"></video>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__instagram" href="#">#visitsedona</a>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="social__item"><a class="social__link social__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
+        </ul>
+      </div>
+
+      <p class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <img class="copyright__link" src="http://placehold.it/27x34" width="27" height="34" alt="HTML academy" href="htmlacademy.ru">
+      </p>
+    </footer>
+  </body>
+</html>
