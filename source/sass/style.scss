@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -34,7 +34,6 @@ input[type="radio"].visually-hidden {
 @import "main-nav.scss";
 @import "page-description.scss";
 @import "page-footer.scss";
-
 
 /* блоки на главаной */
 @import "header-main.scss";
