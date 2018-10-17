@@ -1,0 +1,121 @@
+.feedback {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 75px;
+}
+
+.feedback__line {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+  height: 1px;
+  width: 100%;
+  background-color: #e5e5e5;
+  border: 0;
+}
+
+.feedback h2 {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 5px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  text-align: center;
+}
+
+.feedback p {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 0;
+
+  text-align: left;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea[type="text"] {
+  box-sizing: border-box;
+  padding: 16px 20px;
+  margin-left: 15px;
+
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.feedback-form textarea[type="text"] {
+  min-width: 280px;
+}
+
+.feedback-form label[for="feedback-phone"],
+.feedback-form label[for="feedback-email"] {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.feedback-form input[type="tel"],
+.feedback-form input[type="email"] {
+  box-sizing: border-box;
+  padding: 16px 20px;
+  padding-right: 58px;
+  margin-left: 0;
+  margin-top: 10px;
+
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.feedback-form input:focus,
+.feedback-form input:active {
+  background-color: #ffffff;
+  border: 2px #e5e5e5 solid;
+}
+
+.feedback__checkbox,
+.feedback__radio {
+  padding-left: 70px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.feedback-form input::-moz-placeholder,
+.feedback-form input::-webkit-input-placeholder,
+.feedback-form input:-ms-input-placeholder,
+.feedback-form input::-ms-input-placeholder,
+.feedback-form input::placeholder {
+  color: #000000;
+}
+
+button {
+  display: inline-block;
+  min-width: 280px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 16px 30px;
+
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}

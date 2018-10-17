@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1 px;
+  border: 0px;
+  padding: 0px;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+/* общие блоки на всех страницах */
+@import "main-nav.scss";
+@import "page-description.scss";
+@import "page-footer.scss";
+
+
+/* блоки на главаной */
+@import "header-main.scss";
+@import "main-advantages.scss";
+@import "main-booking.scss";
+
+/* общие блоки на внутренних */
+@import "header-inner.scss";
+
+/* блоки на странице "Фото и видео" */
+@import "photos-section.scss";
+@import "video-section.scss";
+
+/* блоки на странице "Отзывы" */
+@import "feedback-form.scss";
