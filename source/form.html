@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
-    <header class="header">
+    <header class="main-header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -21,25 +22,27 @@
         <button class="main-nav close-button" type="button">Закрыть</button>
       </nav>
 
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="city of Sedona logo">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="city of Sedona logo">
       </a>
 
-      <div class="header__site-page-image site-page-image">
+      <div class="main-header__site-page-image site-page-image">
         <img class="site-page-image__image" src="http://placehold.it/768x158" width="768" height="158" alt="Sedona_foto">
         <img class="site-page-image__title" src="http://placehold.it/229x39" width="229" height="39" alt="Sedona">
       </div>
   </header>
 
-    <main class="page-form">
+    <main class="page-desc">
       <h1 class="visually-hidden">Форма отзыва</h1>
 
-      <div class="page-form__description">
+      <div class="page-desc__description">
         <h2>Оставьте свой отзыв</h2>
         <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
 
       <section class="feedback">
+
+        <hr class="feedback__line">
         <h2 class="feedback__title">Представьтесь:</h2>
         <form class="feedback-form" method="post" action="https://htmlacademy.ru">
         <p class="feedback__item">
@@ -63,7 +66,7 @@
         </p>
         <p class="feedback__item">
           <label for="feedback-email">Электронная почта<sup>*</sup>:</label>
-          <input id="feedback-email" type="text" name="email" placeholder="Введите e-mail">
+          <input id="feedback-email" type="email" name="email" placeholder="Введите e-mail">
         </p>
 
         <hr class="feedback__line">

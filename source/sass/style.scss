@@ -1,0 +1,30 @@
+html,
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+/* общие блоки на всех страницах */
+@import "main-nav.scss";
+@import "page-description.scss";
+@import "page-footer.scss";
+
+/* блоки на главаной */
+@import "header-main.scss";
+@import "main-advantages.scss";
+@import "main-booking.scss";
+
+/* общие блоки на внутренних */
+@import "header-inner.scss";
+
+/* блоки на странице "Фото и видео" */
+@import "photos-section.scss";
+@import "video-section.scss";
+
+/* блоки на странице "Отзывы" */
+@import "feedback-form.scss";
