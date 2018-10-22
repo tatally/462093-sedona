@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   padding-bottom: 75px;
+
+  min-width: 320px;
 }
 
 .feedback__line {
@@ -31,9 +33,13 @@
 .feedback p {
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 0;
+  padding-bottom: 20px;
 
   text-align: left;
+}
+
+.feedback-form label {
+
 }
 
 .feedback-form input[type="text"],
@@ -52,6 +58,7 @@
 }
 
 .feedback-form textarea[type="text"] {
+  margin: auto;
   min-width: 280px;
 }
 
@@ -118,4 +125,10 @@ button {
 
   background-color: #81b3d2;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__line {
+    display: none;
+  }
 }

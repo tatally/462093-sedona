@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -10,7 +11,7 @@
 
     <header class="main-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
         <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item"><a href="index.html">Главная</a></li>
@@ -19,7 +20,7 @@
               <li class="site-list__item"><a href="htmlacademy.html">HTML academy</a></li>
             </ul>
         </div>
-        <button class="main-nav close-button" type="button">Закрыть</button>
+        <!-- <button class="main-nav close-button" type="button">Закрыть</button> -->
       </nav>
 
       <a class="main-header__logo" href="index.html">
@@ -42,9 +43,11 @@
 
       <section class="feedback">
 
-        <hr class="feedback__line">
-        <h2 class="feedback__title">Представьтесь:</h2>
         <form class="feedback-form" method="post" action="https://htmlacademy.ru">
+
+        <div class="feedback__basic-info">
+          <hr class="feedback__line">
+          <h2 class="feedback__title">Представьтесь:</h2>
         <p class="feedback__item">
           <label for="feedback-name">Имя<sup>*</sup>:</label>
           <input id="feedback-name" type="text" name="name" placeholder="Петр">
@@ -57,9 +60,11 @@
           <label for="feedback-last-name">Отчество</label>
           <input id="feedback-last-name" type="text" name="last-name" placeholder="Александрович">
         </p>
+        </div>
 
+        <div class="feedback__contact-info">
         <hr class="feedback__line">
-        <h2 class="feedback__title">Контактная информация:</h2>
+          <h2 class="feedback__title">Контактная информация:</h2>
         <p class="feedback__item">
           <label for="feedback-phone">Контактный телефон<sup>*</sup>:</label>
           <input id="feedback-phone" type="tel" name="phone" placeholder="Введите телефон">
@@ -68,8 +73,10 @@
           <label for="feedback-email">Электронная почта<sup>*</sup>:</label>
           <input id="feedback-email" type="email" name="email" placeholder="Введите e-mail">
         </p>
+        </div>
 
-        <hr class="feedback__line">
+        <div class="feedback__impression">
+          <hr class="feedback__line">
         <h2 class="feedback__title">Ваше общее впечатление:</h2>
         <p class="feedback__radio radio">
           <label class="radio__item">
@@ -92,7 +99,9 @@
             Затрудняюсь ответить
           </label>
         </p>
+        </div>
 
+        <div class="feedback__visited-places">
         <hr class="feedback__line">
         <h2 class="feedback__title">Посещенные достопримечательности:</h2>
         <p class="feedback__checkbox checkbox">
@@ -123,13 +132,16 @@
             Красные скалы
           </label>
         </p>
+        </div>
 
+        <div class="feedback__emotion-desc">
         <hr class="feedback__line">
         <h2 class="feedback__title">Опишите свои эмоции:</h2>
         <p class="feedback__item">
           <label for="feedback-emotion" class="visually-hidden">Опишите эмоции:</label>
           <textarea id="feedback-emotion" type="text" name="text" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </p>
+        </div>
 
           <button class="feedback_button" type="submit">Отправить отзыв</button>
         </form>
