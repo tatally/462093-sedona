@@ -189,7 +189,8 @@
   }
 
   .feedback__line {
-    display: none;
+    width: 648px;
+    // margin: 0 60px
   }
 
   .feedback h2 {
@@ -206,7 +207,6 @@
   }
 
   .feedback p {
-    margin-left: 60px;
     padding-bottom: 20px;
 
     text-align: left;
@@ -242,7 +242,6 @@
   }
 
   .feedback__contact-info {
-    // display: block;
     width: 648px;
   }
 
@@ -253,10 +252,6 @@
     align-items: center;
 
     width: 648px;
-
-
-    // margin-left: 100px;
-    // margin-right: 100px;
   }
 
   .feedback_button {
@@ -269,21 +264,56 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    width: 960px;
-
-    margin: 0;
-    padding: 0 120px;
+    margin: 0 auto;
+    padding: 0;
     padding-bottom: 75px;
+
+    width: 960px;
   }
 
-  .feedback h2 {
-    // width: 1200px;
+  .feedback__line {
+    width: 960px;
   }
 
   .feedback-form textarea[type="text"] {
     width: 960px;
     min-height: 160px;
-    margin: 0;
+    margin: 0 auto;
   }
+
+  .feedback__contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+  }
+
+  .feedback__contact-info p {
+    display: flex;
+    align-items: center;
+  }
+
+  .feedback-form input[type="tel"],
+  .feedback-form input[type="email"] {
+    padding-right: 58px;
+    margin-top: 10px;
+
+    width: 316px;
+  }
+
+  .feedback__visited-places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 960px;
+  }
+
+  .feedback_button {
+    width: 324px;
+    margin: 40px auto;
+
+    font-size: 21px;
+    }
 
 }
