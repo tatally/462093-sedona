@@ -119,45 +119,6 @@
   cursor: pointer;
 }
 
-// .feedback__checkbox input[type="checkbox"] + .checkbox-indicator {
-//   // position: absolute;
-//   top: 0;
-//   left: 0;
-//
-//   width: 17px;
-//   height: 17px;
-//
-//   border: 2px #000000 solid;
-// }
-//
-// .login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
-//   color: #663d15;
-//   outline: thin dotted;
-//   outline: 5px auto -webkit-focus-ring-color;
-// }
-//
-// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
-// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-//   content: " ";
-//
-//   position: absolute;
-//   top: 8px;
-//   left: 1px;
-//
-//   width: 15px;
-//   height: 2px;
-//
-//   background-color: #000000;
-// }
-//
-// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-//   transform: rotate(45deg);
-// }
-//
-// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-//   transform: rotate(-45deg);
-// }
-
 .feedback_button {
   display: inline-block;
   width: 280px;
@@ -179,6 +140,7 @@
   background-color: #669ec1;
 }
 
+
 @media (min-width: $tablet-width) {
   .feedback {
     margin: 0 auto;
@@ -190,7 +152,6 @@
 
   .feedback__line {
     width: 648px;
-    // margin: 0 60px
   }
 
   .feedback h2 {
@@ -203,7 +164,7 @@
     font-size: 21px;
 
     background-size: auto;
-    background-color: #ffffff[];
+    background-color: #ffffff;
   }
 
   .feedback p {
@@ -218,19 +179,12 @@
   .feedback-form input[type="email"] {
     box-sizing: border-box;
     padding: 16px 20px;
-    // width: 192px;
   }
-
 
   .feedback-form textarea[type="text"] {
     width: 648px;
     min-height: 160px;
     margin: 0;
-  }
-
-  .feedback-form input[type="text"],
-  .feedback-form textarea[type="text"] {
-    // margin-left: 15px;
   }
 
   .feedback-form input[type="tel"],
@@ -261,6 +215,7 @@
     font-size: 21px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .feedback {
@@ -315,5 +270,4 @@
 
     font-size: 21px;
     }
-
 }
