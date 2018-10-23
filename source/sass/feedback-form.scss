@@ -1,6 +1,6 @@
 .feedback {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   padding-bottom: 75px;
 
   min-width: 320px;
@@ -18,8 +18,9 @@
 }
 
 .feedback h2 {
-  margin-right: 20px;
-  margin-left: 20px;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 5px;
 
   font-size: 18px;
@@ -31,22 +32,21 @@
 }
 
 .feedback p {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0;
   padding-bottom: 20px;
 
   text-align: left;
 }
 
-.feedback-form label {
-
-}
-
 .feedback-form input[type="text"],
-.feedback-form textarea[type="text"] {
+.feedback-form textarea[type="text"],
+.feedback-form input[type="tel"],
+.feedback-form input[type="email"] {
   box-sizing: border-box;
   padding: 16px 20px;
-  margin-left: 15px;
+  width: 192px;
+
+  min-height: 58px;
 
   font: inherit;
   font-size: 18px;
@@ -58,9 +58,33 @@
 }
 
 .feedback-form textarea[type="text"] {
-  margin: auto;
   min-width: 280px;
 }
+
+.feedback-form input[type="text"] {
+  margin-left: 10px;
+}
+
+.feedback-form input[type="tel"],
+.feedback-form input[type="email"] {
+  padding-right: 58px;
+  margin-left: 0;
+  margin-top: 10px;
+
+  width: 280px;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form textarea[type="text"]:hover,
+.feedback-form input[type="tel"]:hover,
+.feedback-form input[type="email"]:hover,
+.feedback-form input[type="text"]:focus,
+.feedback-form textarea[type="text"]:focus,
+.feedback-form input[type="tel"]:focus,
+.feedback-form input[type="email"]:focus {
+  background-color: #e5e5e5;
+}
+
 
 .feedback-form label[for="feedback-phone"],
 .feedback-form label[for="feedback-email"] {
@@ -68,36 +92,12 @@
   margin-right: 20px;
 }
 
-.feedback-form input[type="tel"],
-.feedback-form input[type="email"] {
-  box-sizing: border-box;
-  padding: 16px 20px;
-  padding-right: 58px;
-  margin-left: 0;
-  margin-top: 10px;
-
-  font: inherit;
-  font-size: 18px;
-  font-weight: 700;
-  color: #000000;
-
-  background-color: #f2f2f2;
-  border: 0;
-}
-
-.feedback-form input:focus,
-.feedback-form input:active {
+.feedback-form input[type="text"]:active,
+.feedback-form textarea[type="text"]:active,
+.feedback-form input[type="tel"]:active,
+.feedback-form input[type="email"]:active {
   background-color: #ffffff;
   border: 2px #e5e5e5 solid;
-}
-
-.feedback__checkbox,
-.feedback__radio {
-  padding-left: 70px;
-
-  font-weight: 700;
-
-  cursor: pointer;
 }
 
 .feedback-form input::-moz-placeholder,
@@ -108,12 +108,60 @@
   color: #000000;
 }
 
-button {
+.feedback__checkbox,
+.feedback__radio {
+  padding-left: 70px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+
+  cursor: pointer;
+}
+
+// .feedback__checkbox input[type="checkbox"] + .checkbox-indicator {
+//   // position: absolute;
+//   top: 0;
+//   left: 0;
+//
+//   width: 17px;
+//   height: 17px;
+//
+//   border: 2px #000000 solid;
+// }
+//
+// .login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+//   color: #663d15;
+//   outline: thin dotted;
+//   outline: 5px auto -webkit-focus-ring-color;
+// }
+//
+// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+//   content: " ";
+//
+//   position: absolute;
+//   top: 8px;
+//   left: 1px;
+//
+//   width: 15px;
+//   height: 2px;
+//
+//   background-color: #000000;
+// }
+//
+// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+//   transform: rotate(45deg);
+// }
+//
+// .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+//   transform: rotate(-45deg);
+// }
+
+.feedback_button {
   display: inline-block;
-  min-width: 280px;
+  width: 280px;
   margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
   padding: 16px 30px;
 
   font: inherit;
@@ -127,8 +175,115 @@ button {
   border: none;
 }
 
+.feedback_button:hover {
+  background-color: #669ec1;
+}
+
 @media (min-width: $tablet-width) {
+  .feedback {
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 75px;
+
+    width: 768px;
+  }
+
   .feedback__line {
     display: none;
   }
+
+  .feedback h2 {
+    width: 280px;
+
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 30px;
+
+    font-size: 21px;
+
+    background-size: auto;
+    background-color: #ffffff[];
+  }
+
+  .feedback p {
+    margin-left: 60px;
+    padding-bottom: 20px;
+
+    text-align: left;
+  }
+
+  .feedback-form input[type="text"],
+  .feedback-form textarea[type="text"],
+  .feedback-form input[type="tel"],
+  .feedback-form input[type="email"] {
+    box-sizing: border-box;
+    padding: 16px 20px;
+    // width: 192px;
+  }
+
+
+  .feedback-form textarea[type="text"] {
+    width: 648px;
+    min-height: 160px;
+    margin: 0;
+  }
+
+  .feedback-form input[type="text"],
+  .feedback-form textarea[type="text"] {
+    // margin-left: 15px;
+  }
+
+  .feedback-form input[type="tel"],
+  .feedback-form input[type="email"] {
+    padding-right: 58px;
+    margin-top: 10px;
+
+    width: 648px;
+  }
+
+  .feedback__contact-info {
+    // display: block;
+    width: 648px;
+  }
+
+  .feedback__visited-places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 648px;
+
+
+    // margin-left: 100px;
+    // margin-right: 100px;
+  }
+
+  .feedback_button {
+    width: 324px;
+    margin-left: 60px;
+
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    width: 960px;
+
+    margin: 0;
+    padding: 0 120px;
+    padding-bottom: 75px;
+  }
+
+  .feedback h2 {
+    // width: 1200px;
+  }
+
+  .feedback-form textarea[type="text"] {
+    width: 960px;
+    min-height: 160px;
+    margin: 0;
+  }
+
 }
