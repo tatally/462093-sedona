@@ -1,7 +1,9 @@
 .feedback {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   padding-bottom: 75px;
+
+  min-width: 320px;
 }
 
 .feedback__line {
@@ -16,8 +18,9 @@
 }
 
 .feedback h2 {
-  margin-right: 20px;
-  margin-left: 20px;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 5px;
 
   font-size: 18px;
@@ -29,18 +32,21 @@
 }
 
 .feedback p {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-bottom: 0;
+  margin: 0;
+  padding-bottom: 20px;
 
   text-align: left;
 }
 
 .feedback-form input[type="text"],
-.feedback-form textarea[type="text"] {
+.feedback-form textarea[type="text"],
+.feedback-form input[type="tel"],
+.feedback-form input[type="email"] {
   box-sizing: border-box;
   padding: 16px 20px;
-  margin-left: 15px;
+  width: 192px;
+
+  min-height: 58px;
 
   font: inherit;
   font-size: 18px;
@@ -55,42 +61,43 @@
   min-width: 280px;
 }
 
+.feedback-form input[type="text"] {
+  margin-left: 10px;
+}
+
+.feedback-form input[type="tel"],
+.feedback-form input[type="email"] {
+  padding-right: 58px;
+  margin-left: 0;
+  margin-top: 10px;
+
+  width: 280px;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form textarea[type="text"]:hover,
+.feedback-form input[type="tel"]:hover,
+.feedback-form input[type="email"]:hover,
+.feedback-form input[type="text"]:focus,
+.feedback-form textarea[type="text"]:focus,
+.feedback-form input[type="tel"]:focus,
+.feedback-form input[type="email"]:focus {
+  background-color: #e5e5e5;
+}
+
+
 .feedback-form label[for="feedback-phone"],
 .feedback-form label[for="feedback-email"] {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.feedback-form input[type="tel"],
-.feedback-form input[type="email"] {
-  box-sizing: border-box;
-  padding: 16px 20px;
-  padding-right: 58px;
-  margin-left: 0;
-  margin-top: 10px;
-
-  font: inherit;
-  font-size: 18px;
-  font-weight: 700;
-  color: #000000;
-
-  background-color: #f2f2f2;
-  border: 0;
-}
-
-.feedback-form input:focus,
-.feedback-form input:active {
+.feedback-form input[type="text"]:active,
+.feedback-form textarea[type="text"]:active,
+.feedback-form input[type="tel"]:active,
+.feedback-form input[type="email"]:active {
   background-color: #ffffff;
   border: 2px #e5e5e5 solid;
-}
-
-.feedback__checkbox,
-.feedback__radio {
-  padding-left: 70px;
-
-  font-weight: 700;
-
-  cursor: pointer;
 }
 
 .feedback-form input::-moz-placeholder,
@@ -101,12 +108,21 @@
   color: #000000;
 }
 
-button {
+.feedback__checkbox,
+.feedback__radio {
+  padding-left: 70px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+
+  cursor: pointer;
+}
+
+.feedback_button {
   display: inline-block;
-  min-width: 280px;
+  width: 280px;
   margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
   padding: 16px 30px;
 
   font: inherit;
@@ -118,4 +134,140 @@ button {
 
   background-color: #81b3d2;
   border: none;
+}
+
+.feedback_button:hover {
+  background-color: #669ec1;
+}
+
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 75px;
+
+    width: 768px;
+  }
+
+  .feedback__line {
+    width: 648px;
+  }
+
+  .feedback h2 {
+    width: 280px;
+
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 30px;
+
+    font-size: 21px;
+
+    background-size: auto;
+    background-color: #ffffff;
+  }
+
+  .feedback p {
+    padding-bottom: 20px;
+
+    text-align: left;
+  }
+
+  .feedback-form input[type="text"],
+  .feedback-form textarea[type="text"],
+  .feedback-form input[type="tel"],
+  .feedback-form input[type="email"] {
+    box-sizing: border-box;
+    padding: 16px 20px;
+  }
+
+  .feedback-form textarea[type="text"] {
+    width: 648px;
+    min-height: 160px;
+    margin: 0;
+  }
+
+  .feedback-form input[type="tel"],
+  .feedback-form input[type="email"] {
+    padding-right: 58px;
+    margin-top: 10px;
+
+    width: 648px;
+  }
+
+  .feedback__contact-info {
+    width: 648px;
+  }
+
+  .feedback__visited-places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 648px;
+  }
+
+  .feedback_button {
+    width: 324px;
+    margin-left: 60px;
+
+    font-size: 21px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 75px;
+
+    width: 960px;
+  }
+
+  .feedback__line {
+    width: 960px;
+  }
+
+  .feedback-form textarea[type="text"] {
+    width: 960px;
+    min-height: 160px;
+    margin: 0 auto;
+  }
+
+  .feedback__contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+  }
+
+  .feedback__contact-info p {
+    display: flex;
+    align-items: center;
+  }
+
+  .feedback-form input[type="tel"],
+  .feedback-form input[type="email"] {
+    padding-right: 58px;
+    margin-top: 10px;
+
+    width: 316px;
+  }
+
+  .feedback__visited-places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 960px;
+  }
+
+  .feedback_button {
+    width: 324px;
+    margin: 40px auto;
+
+    font-size: 21px;
+  }
 }
