@@ -1,0 +1,257 @@
+.nav {
+  position: relative;
+
+  // width: 320px;
+  min-height: 58px;
+  margin: 0 auto;
+
+  background-color: #81b3d2;
+}
+
+.nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 22px;
+  height: 22px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+}
+
+.nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 2px;
+
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+}
+
+.nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.nav--opened .main-nav__toggle {
+  top: 7px;
+  right: 0;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: " ";
+
+    position: absolute;
+    top: 17px;
+    right: -280px;
+
+    width: 22px;
+    height: 3px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg)
+  }
+}
+
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__list li {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  // text-decoration: none;
+  // font-size: 18px;
+  // line-height: 40px;
+  // font-weight: 700;
+  // color: #ffffff;
+  //
+  text-align: center;
+
+  border-top: 1px #9ac2db solid;
+  border-bottom: 1px #678fa8 solid;
+}
+
+.nav__list a {
+  // display: block;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fff;
+
+  text-align: center;
+
+  // border-top: 1px #9ac2db solid;
+  // border-bottom: 1px #678fa8 solid;
+}
+
+.nav__list li:nth-child(1) {
+  border-top: none;
+}
+
+.nav__list li:nth-child(3) {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  border: none;
+}
+
+.nav__list li:hover {
+  background-color: #669ec1;
+}
+
+.header__logo {
+  position: absolute;
+  bottom: -41px;
+  left: 50%;
+  margin-left: -51px;
+
+  z-index: 2;
+  background-color: transparent;
+}
+
+@media (max-width: $mobile-width-only) {
+  .nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+
+    background-color: #81b3d2;
+  }
+
+  .main-nav--opened .main-nav__wrapper::before {
+    content: "";
+
+    position: absolute;
+    top: 17;
+    left: -280px;
+    z-index: 2;
+
+    width: 7px;
+    height: 100%;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  //
+  // .main-nav--nojs .main-nav__wrapper {
+  //   position: static;
+  //   min-height: 0;
+  // }
+  //
+  // .main-nav--nojs .site-list__item {
+  //   display: block;
+  // }
+  //
+  // .main-nav--nojs .site-list__item--active a {
+  //   padding-right: 21px;
+  //   padding-left: 21px;
+  //
+  //   text-align: left;
+  // }
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    width: auto;
+
+    background-color: transparent;
+  }
+
+  .nav__list {
+    display: flex;
+    height: 56px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav__list li {
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    width: 20%;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+
+    // background-color: #ffffff;
+    // border: none;
+  }
+
+  .nav__list a:hover,
+  .nav__list a:focus {
+    color: #82b3d3;
+    background-color: #ffffff;
+  }
+
+  .nav__list a:active {
+    color: #e5e5e5;
+  }
+
+  .header__logo {
+    position: relative;
+    top: -14px;
+    bottom: auto;
+    z-index: 2;
+    background-color: transparent;
+
+    &:hover {
+      background-color: none;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

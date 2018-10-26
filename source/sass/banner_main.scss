@@ -1,0 +1,50 @@
+.banner {
+  position: relative;
+
+  height: 389px;
+
+  background-color: #ffffff;
+}
+
+.banner__image {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+}
+
+.banner__title {
+  position: absolute;
+
+  top: 90px;
+  left: 50%;
+  margin-left: -140px;
+}
+
+.banner__triangle {
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+  margin-left: -600px;
+}
+
+@media (min-width: $tablet-width) {
+  .banner {
+    min-width: 768px;
+  }
+
+  .main-page-image__image {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    max-width: 1200px;
+  }
+
+  .main-page-image__image {
+    width: 100%;
+  }
+}

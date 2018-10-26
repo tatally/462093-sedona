@@ -1,0 +1,26 @@
+// @media (min-width: $tablet-width) {
+//   body {
+//     width: 678px;
+//     padding: 0;
+//     margin: 0;
+//   }
+// }
+
+@media (min-width: $desktop-width) {
+  html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: #f2f2f2;
+  }
+
+  body {
+    width: 1200px;
+    padding: 0 auto;
+    margin: 0 auto;
+
+    background-color: #ffffff;
+  }
+
+}

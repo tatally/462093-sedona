@@ -1,0 +1,38 @@
+.map {
+  position: relative;
+  width: 320px;
+  height: 350px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+// .map__img {
+//   position: absolute;
+//
+//   width: 320px;
+//   top: 0;
+//   left: 0;
+// }
+
+.map__dot {
+  position: absolute;
+
+  top: 50%;
+  margin-top: -15px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 1200px;
+  }
+}

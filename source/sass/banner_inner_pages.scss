@@ -1,0 +1,42 @@
+.banner-page {
+  position: relative;
+
+  height: 290px;
+
+  background-color: #ffffff;
+}
+
+.banner-page__image {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+}
+
+.banner-page__title {
+  position: absolute;
+
+  top: 95px;
+  left: 50%;
+  margin-left: -219px;
+}
+
+.banner-page__triangle {
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+  margin-left: -600px;
+}
+
+@media (min-width: $tablet-width) {
+  .banner-page {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner-page {
+    max-width: 1200px;
+  }
+}
