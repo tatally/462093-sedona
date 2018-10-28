@@ -5,7 +5,7 @@
 }
 
 .slogan-desc,
-.slogan-block  {
+.slogan-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,7 +17,7 @@
 
 .slogan h3,
 .slogan .text {
-  color: #fff;
+  color: #ffffff;
 }
 
 .slogan {
@@ -107,8 +107,7 @@
     width: 67%;
   }
 
-/* Ограничение заголовка по ширине.
-При изменении заголовка может потребоваться увеличение значений */
+/* Ограничение заголовка по ширине. При изменении заголовка может потребоваться увеличение значений */
   .slogan--bg .slogan-desc {
     width: 135px;
     margin: 0;
@@ -132,7 +131,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 33,333333%;
+    width: 33.333333%;
     margin: 0;
     padding: 0;
     height: 330px;
@@ -154,6 +153,7 @@
     width: 77px;
     height: 68px;
   }
+
   .advantages-ico .gift {
     width: 64px;
     height: 75px;
@@ -164,9 +164,9 @@
 @media (min-width: $desktop-width) {
   .advantages,
   .slogan {
-      width: 1200px;
+    width: 1200px;
 
-      margin: 0 auto;
+    margin: 0 auto;
   }
 
   .slogan--bg .text {

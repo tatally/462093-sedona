@@ -42,23 +42,21 @@ footer {
   &:hover,
   &:focus {
   background-color: #669dbb;
-  }
+}
 
   &:active {
   background-color: #5496bd;
-  }
+}
 
   &:hover path,
   &:focus path {
   fill: #ffffff;
-  }
+}
 
   &:active path {
   fill: rgba(255, 255, 255, 0.3);
-  }
 }
-
-
+}
 
 .copyright {
   display: flex;
@@ -71,7 +69,7 @@ footer {
   padding: 0;
 }
 
-.copyright-icon:hover path ,
+.copyright-icon:hover path,
 .copyright-icon:focus path {
   fill: #82b3d3;
 }

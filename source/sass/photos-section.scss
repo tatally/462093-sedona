@@ -26,9 +26,10 @@
   // align-items: center;
 }
 
-.Like-icon path{
-  fill: rgba(0, 0, 0, 0.3)
+.Like-icon path {
+  fill: rgba(0, 0, 0, 0.3);
 }
+
 .like-photo .text {
   font-weight: 700;
   margin-left: 10px;
@@ -47,9 +48,9 @@
 
 @media (min-width: $tablet-width) {
   .photos {
-      width: 648px;
-      margin: 0 auto;
-      padding: 0;
+    width: 648px;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .wrap {
@@ -90,25 +91,25 @@
     margin-right: 20px;
   }
 
-    .photos__image {
-      width: 324px;
-      height: 267px;
-    }
+  .photos__image {
+    width: 324px;
+    height: 267px;
+  }
 
-    .photo-sig h4{
-      padding: 0;
-      margin: 0;
-    }
+  .photo-sig h4{
+    padding: 0;
+    margin: 0;
+  }
 
-    .photos-line {
-      display: none;
-    }
+  .photos-line {
+    display: none;
+  }
 }
 
 
 @media (min-width: $desktop-width) {
   .photos {
-      width: 1200px;
+    width: 1200px;
   }
 
   .wrap {
@@ -120,42 +121,39 @@
     width: 1200px;
   }
 
-
   // .photo-block .first {
   //   // display: block;
   //   width: 648px;
   //   height: 480px;
   // }
 
-    .photo-block {
-      position: relative;
+  .photo-block {
+    position: relative;
 
-      // width: 33,33333%;
-      height: 400px;
-    }
+    height: 400px;
+  }
 
-    .photos-item {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
+  .photos-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 
-      position: absolute;
-      bottom: 0;
+    position: absolute;
+    bottom: 0;
 
-      width: 400px;
-      height: 80px;
+    width: 400px;
+    height: 80px;
 
-      margin: 0;
-      padding-left: 20px;
-      padding-right: 20px;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 
-      background-color: rgba(0, 0, 0, 0.3);
-    }
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 
-    .photos__image {
-      // position: absolute;
-      width: 400px;
-      height: 267px;
-    }
+  .photos__image {
+    width: 400px;
+    height: 267px;
+  }
 }

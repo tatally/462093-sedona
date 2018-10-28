@@ -30,7 +30,7 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
 
   text-align: center;
 }
@@ -80,8 +80,8 @@
   width: 23px;
   height: 2px;
 
-  background-color: #fff;
-  box-shadow: 0 6px 0 0 #fff, 0 12px 0 0 #fff;
+  background-color: #ffffff;
+  box-shadow: 0 6px 0 0 #ffffff, 0 12px 0 0 #ffffff;
 }
 
 .nav--closed .nav__toggle:active::before {
@@ -103,7 +103,7 @@
     width: 22px;
     height: 3px;
 
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   &::before {
@@ -111,7 +111,7 @@
   }
 
   &::after {
-    transform: rotate(-45deg)
+    transform: rotate(-45deg);
   }
 }
 

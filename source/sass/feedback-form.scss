@@ -24,11 +24,9 @@
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
 
   font-size: 14px;
   line-height: 21px;
-  color: #333333;
 
   text-align: left;
 }
@@ -69,7 +67,7 @@
 .feedback-form input[type="text"]:hover,
 .feedback-form textarea[type="text"]:hover,
 .feedback-form input[type="tel"]:hover,
-.feedback-form input[type="email"]:hover{
+.feedback-form input[type="email"]:hover {
   background-color: #e5e5e5;
 }
 
@@ -89,7 +87,7 @@
 }
 
 .feedback-form input::placeholder,
-.feedback-form textarea::placeholder  {
+.feedback-form textarea::placeholder {
   color: #000000;
 }
 
@@ -192,7 +190,7 @@
   width: 21px;
   height: 21px;
   border-radius: 50%;
-  background-color: #333;
+  background-color: #333333;
 }
 
 .feedback__checkbox label::after {
@@ -200,8 +198,8 @@
   top: 10px;
   width: 20px;
   height: 12px;
-  border-left: 4px solid #333;
-  border-bottom: 4px solid #333;
+  border-left: 4px solid #333333;
+  border-bottom: 4px solid #333333;
   transform: rotate(-45deg);
 }
 
@@ -246,7 +244,7 @@
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
-  color: #fff;
+  color: #ffffff;
 
   background-color: #81b3d2;
   border: none;
@@ -404,8 +402,6 @@
     width: 960px;
     padding: 0;
   }
-
-
 
   .feedback__button {
     width: 480px;
