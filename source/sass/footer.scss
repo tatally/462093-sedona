@@ -41,21 +41,21 @@ footer {
 
   &:hover,
   &:focus {
-  background-color: #669dbb;
-}
+    background-color: #669dbb;
+  }
 
   &:active {
-  background-color: #5496bd;
-}
+    background-color: #5496bd;
+  }
 
   &:hover path,
   &:focus path {
-  fill: #ffffff;
-}
+    fill: #ffffff;
+  }
 
   &:active path {
-  fill: rgba(255, 255, 255, 0.3);
-}
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .copyright {
