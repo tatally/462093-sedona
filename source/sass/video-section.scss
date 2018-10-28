@@ -9,12 +9,68 @@
 p {
   padding-top: 0;
   padding-bottom: 25px;
+  margin: auto;
 
   text-align: center;
+
+  max-width: 280px;
 }
 
 video {
   display: block;
   margin: auto;
   padding: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 65px;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+
+  .video h2,
+  p {
+    padding-bottom: 35px;
+
+    max-width: 430px;
+  }
+
+  .video h2 {
+    font-size: 30px;
+  }
+
+  video {
+    margin-top: 35px;
+    width: 648px;
+    height: 500px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .video {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 30px;
+  }
+
+  .video h2,
+  p {
+    padding-top: 0;
+    padding-bottom: 25px;
+    margin: auto;
+
+    max-width: 430px;
+  }
+
+  .video h2 {
+    font-size: 30px;
+  }
+
+  video {
+    width: 800px;
+  }
 }

@@ -1,50 +1,56 @@
 .banner {
-  position: relative;
-
-  height: 389px;
-
+  margin: 0;
+  height: 390px;
   background-color: #ffffff;
 }
 
-.banner__image {
-  position: absolute;
+.banner .wrap {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  align-items: center;
 
-  right: 0;
-  top: 0;
+  // width: 100%;
+
+  background-color: #ffffff;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .banner__title {
-  position: absolute;
-
-  top: 90px;
-  left: 50%;
-  margin-left: -140px;
+  margin: 90px auto;
 }
 
-.banner__triangle {
-  position: absolute;
 
-  bottom: 0;
-  left: 50%;
-  margin-left: -600px;
-}
 
 @media (min-width: $tablet-width) {
   .banner {
     min-width: 768px;
+    height: 518px;
+    margin: 0;
   }
 
-  .main-page-image__image {
-    width: 100%;
+  .banner .wrap {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+  }
+
+  .banner__title {
+    width: 460px;
+    height: 350px;
+    margin: 80px auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .banner {
     max-width: 1200px;
+    height: 518px;
   }
 
-  .main-page-image__image {
-    width: 100%;
+  .banner .wrap {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
   }
 }

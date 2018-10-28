@@ -7,14 +7,6 @@
   text-align: center;
 }
 
-// .map__img {
-//   position: absolute;
-//
-//   width: 320px;
-//   top: 0;
-//   left: 0;
-// }
-
 .map__dot {
   position: absolute;
 
@@ -30,6 +22,7 @@
     width: 768px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .map {

@@ -27,10 +27,15 @@ footer {
 }
 
 .social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
   margin: 0 6px;
 
   width: 46px;
-  height: 48px;
+  height: 46px;
 
   background-color: #81b3d2;
 
@@ -43,14 +48,17 @@ footer {
   background-color: #5496bd;
   }
 
-  &:hover path {
+  &:hover path,
+  &:focus path {
   fill: #ffffff;
   }
 
-  &:focus path {
-  fill: #87b9d2;
+  &:active path {
+  fill: rgba(255, 255, 255, 0.3);
   }
 }
+
+
 
 .copyright {
   display: flex;

@@ -35,8 +35,6 @@
 
 .slogan__img {
   margin: 0;
-  // margin-top: 20px;
-  // padding: 0;
 }
 
 .advantages-item {
@@ -50,6 +48,13 @@
 
 .advantages-ico {
   margin-top: 30px;
+}
+
+.advantages-ico path,
+.advantages-ico polygon,
+.advantages-ico circle,
+.advantages-ico rect {
+  fill: #81b3d2;
 }
 
 .advantages h3,
@@ -71,16 +76,16 @@
   .slogan--bg .wrap {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
 
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
   }
 
-  .slogan--bg .wrap {
-    height: 255px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .slogan .wrap {
+    height: 260px;
   }
+
 
   .slogan-block {
     display: flex;
@@ -88,16 +93,38 @@
     justify-content: space-between;
 
     width: 100%;
-    // padding: 20px;
-    margin: auto;
+    margin: 0;
   }
 
   .slogan-desc {
-    width: 33,333333%;
+    width: 33%;
 
-    padding: 0 20px;
-   margin: auto;
- }
+    padding: 0 30px;
+    margin: auto;
+  }
+
+  .slogan__img {
+    width: 67%;
+  }
+
+/* Ограничение заголовка по ширине.
+При изменении заголовка может потребоваться увеличение значений */
+  .slogan--bg .slogan-desc {
+    width: 135px;
+    margin: 0;
+  }
+
+  .advantages .wrap .advantages-item:nth-child(1) {
+    order: 1;
+  }
+
+  .advantages .wrap .advantages-item:nth-child(2) {
+    order: 3;
+  }
+
+  .advantages .wrap .advantages-item:nth-child(3) {
+    order: 2;
+  }
 
   .advantages-item {
     display: flex;
@@ -106,8 +133,8 @@
     align-items: center;
 
     width: 33,333333%;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     height: 330px;
   }
 
@@ -116,6 +143,20 @@
     text-align: center;
     padding: 20px;
     margin: auto;
+  }
+
+  .advantages-ico .house {
+    width: 75px;
+    height: 72px;
+  }
+
+  .advantages-ico .burger {
+    width: 77px;
+    height: 68px;
+  }
+  .advantages-ico .gift {
+    width: 64px;
+    height: 75px;
   }
 }
 
@@ -126,5 +167,10 @@
       width: 1200px;
 
       margin: 0 auto;
+  }
+
+  .slogan--bg .text {
+    width: 280px;
+    margin: 0;
   }
 }
