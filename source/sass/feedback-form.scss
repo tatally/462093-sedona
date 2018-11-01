@@ -463,6 +463,8 @@
 
   .feedback__contact-info .feedback__item {
     width: calc(50% - 40px);
+    display: flex;
+    align-items: center;
   }
 
   .feedback__visited-places {
@@ -500,11 +502,6 @@
 
     margin-bottom: 0;
     width: 100%;
-  }
-
-  .feedback__contact-info .feedback__item {
-    display: flex;
-    align-items: center;
   }
 
   .feedback-form input[type="tel"],
