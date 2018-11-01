@@ -169,7 +169,7 @@
   cursor: pointer;
 }
 
-.feedback__block:nth-child(4) h3{
+.feedback__block:nth-child(4) h3 {
   margin-bottom: 0;
 }
 
@@ -325,7 +325,7 @@
     margin-bottom: 35px;
   }
 
-  .feedback-form .feedback__block:nth-child(1) h3{
+  .feedback-form .feedback__block:nth-child(1) h3 {
     margin-bottom: 50px;
   }
 
@@ -461,16 +461,18 @@
     margin-bottom: 70px;
   }
 
-  .feedback__contact-info {
-    margin-bottom: 0;
-  }
-
   .feedback__contact-info .feedback__item {
     width: calc(50% - 40px);
   }
 
   .feedback__visited-places {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
     width: 960px;
+    padding: 0;
     margin: 0;
     margin-bottom: 30px;
   }
@@ -495,6 +497,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 0;
     width: 100%;
   }
 
@@ -519,16 +523,6 @@
 
   .feedback__item .feedback-phone {
     margin-right: 20px;
-  }
-
-  .feedback__visited-places {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 960px;
-    padding: 0;
   }
 
   .rules {

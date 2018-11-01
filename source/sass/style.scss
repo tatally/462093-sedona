@@ -90,12 +90,12 @@ $mobile-width-only: 767px;
     width: 1200px;
     position: relative;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: " ";
       position: absolute;
       z-index: -1;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       top: 0;
       bottom: 0;
       left: 0;
