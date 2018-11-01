@@ -62,7 +62,7 @@
 
 /* прописать тень для последнего пукта меню */
 .nav__list li:nth-child(5) {
-  border-bottom: px #678fa8 solid;
+  box-shadow: inset 0 -1px 7px 0 #678fa8;
 }
 
 .nav__list li:hover {
@@ -234,6 +234,10 @@
 
   .nav__list li:nth-child(6) {
     display: none;
+  }
+
+  .nav__list li:nth-child(5) {
+    box-shadow: none;
   }
 
   .nav__toggle {
