@@ -1,32 +1,47 @@
 .header {
   background-color: #ffffff;
   width: 100%;
+  min-height: 56px;
 }
-//
-// .header__logo {
-//   position: absolute;
-//   bottom: -83px;
-//   left: 50%;
-//   margin-left: -50px;
-//
-//   z-index: 2;
-//   background-color: transparent;
-// }
 
 .header__logo {
   position: absolute;
-  bottom: -41px;
+  bottom: -27px;
   left: 50%;
-  margin-left: -25px;
+  margin-left: -50px;
 
   z-index: 2;
   background-color: transparent;
 }
 
+
 @media (min-width: $tablet-width) {
   .header__logo {
     top: 0;
+    bottom: 0;
     margin: 0;
-    margin-left: -25px;
+    margin-left: -50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo-mobile::before {
+    width: 140px;
+    height: 140px;
+    background-color: #81b3d2;
+    border-radius: 10%;
+    transform: rotate(90deg);
+  }
+
+  .logo-border {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    margin-left: -75px;
+
+    border: 75px solid;
+    border-color: #81b3d2 transparent transparent #81b3d2;
+    border-radius: 10px;
+    transform:rotate(-135deg);
   }
 }

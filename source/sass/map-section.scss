@@ -3,8 +3,11 @@
   width: 320px;
   height: 350px;
   margin: 0 auto;
+  margin-bottom: 40px;
 
   text-align: center;
+
+  background-image: url("../img/bg-map-mobile@1x.jpg");
 }
 
 .map__dot {
@@ -20,6 +23,8 @@
 @media (min-width: $tablet-width) {
   .map {
     width: 768px;
+
+    background-image: url("../img/bg-map-tablet@1x.jpg");
   }
 }
 
@@ -27,5 +32,8 @@
 @media (min-width: $desktop-width) {
   .map {
     width: 1200px;
+    margin-bottom: 10px;
+
+    background-image: url("../img/bg-map-desktop@1x.jpg");
   }
 }

@@ -1,7 +1,4 @@
 .banner-page {
-  margin-top: 56px;
-
-  height: 160px;
   background-color: #ffffff;
 }
 
@@ -12,6 +9,7 @@
   align-items: center;
 
   width: 100%;
+  height: 160px;
 
   background-color: #ffffff;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -20,7 +18,8 @@
 }
 
 .banner-page__title {
-  margin: 50px auto;
+  margin: auto;
+  margin-top: 50px;
 }
 
 
@@ -29,28 +28,29 @@
     min-width: 768px;
     height: 290px;
     margin: 0;
+    margin-bottom: 35px;
   }
 
   .banner-page .wrap {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
+    height: 290px;
   }
 
   .banner-page__title {
     width: 460px;
     height: 80px;
-    margin: 95px auto;
+    margin-top: 95px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .banner-page {
     max-width: 1200px;
-    height: 300px;
+    margin-bottom: 85px;
   }
 
   .banner-page .wrap {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-size: cover;
   }
 }

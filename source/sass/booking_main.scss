@@ -1,5 +1,5 @@
 .booking {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   text-align: center;
 }
@@ -7,12 +7,16 @@
 .booking .wrap {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   width: 280px;
 
   margin: 0 auto;
+}
+
+.booking h2 {
+  margin-bottom: 20px;
 }
 
 .booking button {
@@ -52,18 +56,17 @@
 
 @media (min-width: $tablet-width) {
   .booking {
-    padding-top: 30px;
-    padding-bottom: 36px;
-    margin: 0 auto;
+    padding-bottom: 60px;
+    margin: 5px auto;
   }
 
   .booking h2 {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .booking .text {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .booking .wrap {

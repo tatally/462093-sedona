@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -15,11 +14,13 @@
           <ul class="nav__list">
             <li class="nav-list__item"><a href="index.html">Главная</a></li>
             <li class="nav-list__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="nav-list__item"><a class="header__logo" href="index.html">
+            <li class="nav-list__item">
+              <div class="logo-border"></div>
               <img class="header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="city of Sedona logo">
-            </a></li>
+            </li>
             <li class="nav-list__item"><a href="form.html">Форма отзыва</a></li>
             <li class="nav-list__item"><a href="htmlacademy.html">HTML academy</a></li>
+            <li class="nav-list__item"></li>
           </ul>
         </div>
         <button class="nav__toggle" type="button"><span class="hidden">Открыть меню</span></button>
@@ -32,13 +33,12 @@
 
       <section class="banner-page">
         <div class="wrap">
-          <!-- <img class="banner-page__image" src="img/bg-back-mobile@1x.jpg" width="768" height="290" alt="Sedona-image"> -->
           <img class="banner-page__title" src="img/text-sedona.svg" width="230" height="39" alt="Sedona">
-          <img class="banner-page__triangle" src="img/bg-intro-triangle-mobile.svg" width="1200" height="57" alt="triangle element">
+          <img class="banner-page__triangle" src="img/bg-intro-triangle-desktop.svg" width="1200" height="57" alt="triangle element">
         </div>
       </section>
 
-      <section class="description">
+      <section class="description description--photo">
         <div class="wrap">
         <h3>Фото и видео</h3>
         <div class="text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</div>
@@ -51,9 +51,9 @@
         <div class="wrap">
           <hr class="photos-line">
 
-          <div class="photo-block first">
-            <div class="photos__image">
-              <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото: Неродные просторы">
+          <div class="photo-block photo-block--first_photo">
+            <div class="photos__image photos__image--first_photo">
+              <img src="img/photo-sunset-desktop@1x.jpg" width="1200" height="400" alt="Фото: Неродные просторы">
             </div>
             <div class="photos-item">
               <div class="photo-sig">
@@ -71,7 +71,7 @@
 
           <div class="photo-block">
             <div class="photos__image">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Фото: Неродные просторы">
+              <img src="img/photo-cactus-desktop@1x.jpg" width="400" height="267" alt="Фото: Неродные просторы">
             </div>
             <div class="photos-item">
               <div class="photo-sig">
@@ -89,7 +89,7 @@
 
           <div class="photo-block">
             <div class="photos__image">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Фото: Неродные просторы">
+              <img src="img/photo-roads-desktop@1x.jpg" width="400" height="267" alt="Фото: Неродные просторы">
             </div>
             <div class="photos-item">
               <div class="photo-sig">
@@ -107,7 +107,7 @@
 
           <div class="photo-block">
             <div class="photos__image">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Фото: Неродные просторы">
+              <img src="img/photo-bridge-desktop@1x.jpg" width="400" height="267" alt="Фото: Неродные просторы">
             </div>
             <div class="photos-item">
               <div class="photo-sig">
@@ -127,8 +127,8 @@
 
         <section class="video">
           <h2>Все еще сомневаетесь?</h2>
-          <div class="text">Смотрите презентацию и скорее за билетами, пока они не подорожали в очередной раз!</div>
-          <video scr="#" poster="http://placehold.it/320x200" controls width="320" height="200"></video>
+          <div class="text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</div>
+          <video scr="#" poster="img/video-desktop@1x.jpg" controls width="320" height="200"></video>
         </section>
 
     </main>
